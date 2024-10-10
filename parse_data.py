@@ -130,8 +130,8 @@ def save_to_json(data, filename):
 
 
 if __name__ == "__main__":
-
-    main_url = "dddddd"
+    
+    main_url = "link_bank"
 
     all_data = parse_main_page(main_url)
     save_to_json(all_data, 'all_articles.json')
