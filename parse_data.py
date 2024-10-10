@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 from urllib.parse import urljoin
+from config import link_bank
 
 
 #функция очистки текста
@@ -129,7 +130,9 @@ def save_to_json(data, filename):
 
 
 if __name__ == "__main__":
-    main_url = "https://belarusbank.by/ru/33139/press/29690"
+
+    main_url = "dddddd"
+
     all_data = parse_main_page(main_url)
     save_to_json(all_data, 'all_articles.json')
     print(f"Данные всех статей сохранены в файл all_articles.json. Количество обработанных страниц: {len(all_data)}")
